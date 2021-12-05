@@ -72,12 +72,13 @@
         });
         
         if($result) {
-            if($result[0]['password'] === md5($password)) {
+            $firstKey = array_key_first($result);
+            if($result[$firstKey]['password'] == md5($password)) {
                 if(session_status() != PHP_SESSION_ACTIVE) {
                     session_start();
                 }
-                $_SESSION['email'] = $result[0]['email'];
-                $_SESSION['username'] = $result[0]['name'];
+                $_SESSION['email'] = $result[$firstKey]['email'];
+                $_SESSION['username'] = $result[$firstKey]['name'];
                 return ['status' => true, 'message' => 'Logged in successfully'];
             }
             return ['status' => false, 'message' => 'Wrong password'];
