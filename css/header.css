@@ -1,0 +1,53 @@
+header {
+    background-color: #e3e3e3;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    transition: .5s;
+}
+header a {
+    color: #1e2e35;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: .3s cubic-bezier(.5, 0, 0, 1);
+    font-size: 25px;
+}
+
+header.transparent {
+    background-color: #e3e3e32a;
+}
+header.transparent a {
+    color: #e3e3e3cc;
+}
+header a:hover {
+    color: #D12A38;
+}
+
+header .login {
+    position: absolute;
+    color: #1e2e35;
+    font-size: 15px;
+    right: 20px;
+}
+header .login a {
+    font-size: 15px;
+    margin: 0;
+    font-weight: bold;
+}
+header .login a:not(:last-child)::after {
+    content: '/';
+    margin: 0 10px;
+    color: #1e2e35;
+    transition: .3s cubic-bezier(.5, 0, 0, 1);
+}
+header.transparent .login {
+    color: #e3e3e3cc;
+}
+header.transparent .login a::after {
+    color: #e3e3e3cc;
+}
