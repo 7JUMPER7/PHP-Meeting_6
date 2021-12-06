@@ -13,7 +13,7 @@
             ?>
             <script>
                 setTimeout(() => {
-                    window.location = '?page=home';
+                    window.location = '?page=gallery';
                 }, 1000);
             </script>
             <?php

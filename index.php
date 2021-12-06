@@ -1,5 +1,5 @@
 <?php
-    $links = ['home' => './pages/home.php', 'upload' => './pages/upload.php', 'gallery' => './pages/gallery.php'];
+    $links = ['gallery' => './pages/gallery.php', 'upload' => './pages/upload.php'];
     $loginLinks = ['register' => './pages/registration.php', 'login' => './pages/login.php'];
 ?>
 
