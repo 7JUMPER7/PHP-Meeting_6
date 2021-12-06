@@ -85,4 +85,10 @@
         }
         return ['status' => false, 'message' => 'Email doesn\'t found'];
     }
+
+    function getImages() {
+        $directory = './images';
+        $files = array_diff(scandir($directory), array('..', '.'));
+        return $files;
+    }
 ?>

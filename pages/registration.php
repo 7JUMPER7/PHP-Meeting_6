@@ -10,6 +10,13 @@
         );
         if($result['status']) {
             $resultBox = "<div class='resultBox success'>".$result['message']."</div>";
+            ?>
+            <script>
+                setTimeout(() => {
+                    window.location = '?page=home';
+                }, 1000);
+            </script>
+            <?php
         } else {
             $resultBox = "<div class='resultBox fail'>".$result['message']."</div>";
         }
@@ -34,5 +41,5 @@
         <input type="password" name="password2" required>
     </label>
     <input type="submit" value="Register" name="sBtn">
-    <?php if($resultBox) echo $resultBox ?>
+    <?php if($resultBox != '') echo $resultBox ?>
 </form>

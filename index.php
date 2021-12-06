@@ -13,6 +13,7 @@
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/header.css" rel="stylesheet">
     <link href="./css/form.css" rel="stylesheet">
+    <link href="./css/gallery.css" rel="stylesheet">
 </head>
 <body>
     <header id="header">

@@ -68,3 +68,22 @@ form .resultBox {
     color: #D12A38;
     /* border-color: #D12A38; */
 }
+
+input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+form .uploader {
+    background-color: whitesmoke;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: .3s;
+    font-size: 18px;
+    padding: 5px;
+    color: black;
+}
+form .uploader:hover {
+    background-color: #d12a3894;
+    color: white;
+}
