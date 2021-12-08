@@ -41,5 +41,9 @@
         <input type="password" name="password2" required>
     </label>
     <input type="submit" value="Register" name="sBtn">
+    <div class="orLogin">
+        <span>Or </span>
+        <a href="?page=login">Log in</a>
+    </div>
     <?php if($resultBox != '') echo $resultBox ?>
 </form>

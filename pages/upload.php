@@ -27,9 +27,9 @@
         <?php
     } else {
         ?>
-            <div style="margin-top: 30px;">
-                Need to Register / Log in
-            </div>
+            <script>
+                window.location = '?page=register';
+            </script>
         <?php
     }
 ?>

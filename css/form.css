@@ -86,3 +86,15 @@ form .uploader:hover {
     background-color: #d12a3894;
     color: white;
 }
+
+.orLogin {
+    text-align: center;
+}
+.orLogin span {
+    color: black;
+}
+.orLogin a {
+    color: #D12A38;
+    text-decoration: none;
+    font-size: 19px;
+}
